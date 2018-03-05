@@ -1,30 +1,16 @@
 var translations = 0;
 
-var open_dialog = function(){
-	if($('#addTranslationModal').is(':visible')){
-		$('[title="Add translation"]').click();
-	};
-};
-
-var close_dialog = function(){
-	if(!$('#addTranslationModal').is(':visible')){
-		$('[aria-label="Add translation"]').parent().find('button').eq(0).click();
-	};
-};
-
 var get_num_translated = function(){
 	return $('select').eq(0).find('option').length - 1;
 };
 
 var add_translation = function(){
-	open_dialog();
 	var languages = $('.modal-content').eq(1).find('option').length;
 	console.log(languages);
 	if(languages > 0){
 		$('[aria-label="Add translation"]').eq(0).click();
 		wait_for_translation();
 	}else{
-		close_dialog();
 		add_button();
 	};
 };
@@ -53,7 +39,6 @@ var wait_for_clear = function(){
 var auto_bulk_translate = function(){
 	var translations = 0;
 	remove = $('.modal-content li').length;
-	open_dialog();
 	for(i = 0; i < remove; i++){remove_translation()};
 	wait_for_clear();
 };
