@@ -6,7 +6,7 @@ Since spf.io is not an open-source project, this account is a place for bug repo
 
 - info@spf.io
 - [facebook.com/theotechco](https://facebook.com/theotechco)
-- [twitter.com/spfiotranslate](https://twitter.com/spfiotranslate
-- [www.spf.io](https://www.spf.io)
+- [twitter.com/spfiotranslate](https://twitter.com/spfiotranslate)
+- [spf.io](https://www.spf.io)
 - [Blog](https://spf.io/resources/articles/)
 - [Resources](https://spf.io/resources/documentation/)
